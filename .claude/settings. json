@@ -1,6 +1,6 @@
 {
   "permissions": {
-    "allow": ["mcp*fetch*fetch"]
+    "allow": ["mcp__fetch__fetch"]
   },
   "hooks": {
     "PostToolUse": [
