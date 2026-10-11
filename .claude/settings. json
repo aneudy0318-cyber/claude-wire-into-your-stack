@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": ["mcp_fetch_fetch"]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./scripts/check-tests.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
