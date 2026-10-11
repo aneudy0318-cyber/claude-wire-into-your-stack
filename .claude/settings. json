@@ -1,11 +1,11 @@
 {
   "permissions": {
-    "allow": ["mcp_fetch_fetch"]
+    "allow": ["mcp*fetch*fetch"]
   },
   "hooks": {
-    "PreToolUse": [
+    "PostToolUse": [
       {
-        "matcher": "Bash",
+        "matcher": "Write|Edit",
         "hooks": [
           {
             "type": "command",
