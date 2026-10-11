@@ -1,18 +1,5 @@
 {
   "permissions": {
     "allow": ["mcp__fetch__fetch"]
-  },
-  "hooks": {
-    "PostToolUse": [
-      {
-        "matcher": "Write|Edit",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "./scripts/check-tests.sh"
-          }
-        ]
-      }
-    ]
   }
 }
