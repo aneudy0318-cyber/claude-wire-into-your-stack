@@ -8,4 +8,4 @@
 
 - *Hook (.claude/settings.json project scope)*: PostToolUse matcher Write ejecuta npm run lint. Reacciona despues del evento.
 
-- *Headless*: Ejecute claude -p "Revisa el proyecto y genera un reporte de calidad ejecutando lint" --allowedTools "Read, Write, Bash, mcp__filesystem__read_file, mcp__filesystem__list_directory" limitado por minimo privilegio.
+*Headless*: Ejecute claude -p "Revisa el proyecto y genera un reporte de calidad ejecutando lint" --allowedTools "Read, Write, Bash, mcp__filesystem__read_file, mcp__filesystem__list_directory" - Herramientas permitidas: Read, Write, Bash, mcp_filesystemread_file, mcpfilesystem_list_directory. Principio de minimo privilegio.
