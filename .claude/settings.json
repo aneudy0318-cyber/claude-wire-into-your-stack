@@ -1,8 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "mcp_filesystem_read_file",
-      "mcp_filesystem_list_directory"
+      "mcp__filesystem__read_file",
+      "mcp__filesystem_list_directory"
     ]
   },
   "hooks": {
