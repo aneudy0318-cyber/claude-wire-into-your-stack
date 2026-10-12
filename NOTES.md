@@ -1,7 +1,19 @@
 # NOTES
-
-- MCP Server (.mcp.json project scope) filesystem server npx @modelcontextprotocol/server-filesystem . permission allow mcp__filesystem__read_file and mcp__filesystem__list_directory
-- Skill (.claude/skills/api-route/skill.md): repeated flow create API route. Description triggers on "create API route"
-- Command (.cloude/commands/review.md): /review code review shortcut
-- Hook (.cloude/settings.json project score): postToolUse matcher write runs npm run lint, reacts after write
-- Headless: claude -p "Revisa el proyecto y genera reporte de calidad ejecutando lint" --allowedTools "`mcp*filesystem*read_file, mcp*filesystem*list_directory" Tools allowed: mcp*filesystem*read_file, mcp*filesystem*list_directory`
+•	MCP Server (.mcp.json): filesystem
+npx @modelcontextprotocol/server-filesystem
+permission allow:
+mcp__filesystem__read_file
+mcp__filesystem__list_directory
+•	Skill (.claude/skills/api-route/SKILL.md):
+create API route
+•	Command (.claude/commands/review.md):
+/review
+•	Hook (.claude/settings.json):
+PostToolUse matcher Write runs npm run lint
+•	Headless:
+claude -p "Revisa el proyecto y genera reporte"
+--allowedTools "mcp__filesystem__read_file,
+mcp__filesystem__list_directory"
+Tools allowed:
+mcp__filesystem__read_file,
+mcp__filesystem__list_directory
