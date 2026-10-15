@@ -1,20 +1,12 @@
 {
   "permissions": {
-    "allow": [
-      "mcp__filesystem__read_file",
-      "mcp__filesystem_list_directory"
-    ]
+    "allow": ["mcp__filesystem__read_file", "mcp__filesystem__list_directory"]
   },
   "hooks": {
     "PostToolUse": [
       {
         "matcher": "Write",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "npm run lint"
-          }
-        ]
+        "command": "npm run lint"
       }
     ]
   }
